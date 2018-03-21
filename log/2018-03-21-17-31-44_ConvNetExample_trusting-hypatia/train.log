@@ -1,0 +1,18 @@
+2018-03-21 17:31:44.000960: INFO    @common         : Creating dataset
+2018-03-21 17:31:46.000821: INFO    @common         : 	MNISTDataset created
+2018-03-21 17:31:46.000821: INFO    @common         : Creating a model
+2018-03-21 17:31:46.000821: INFO    @model          : 	Creating TF model on 1 GPU devices
+2018-03-21 17:31:47.000582: INFO    @model          : Restoring model from `./log\2018-03-21-16-49-46_ConvNetExample_quirky-euclid`
+2018-03-21 17:31:47.000582: INFO    @model          : Restoring model from checkpoint metafile`./log\2018-03-21-16-49-46_ConvNetExample_quirky-euclid\model_latest.ckpt.meta`
+2018-03-21 17:31:48.000889: INFO    @tf_logging     : Restoring parameters from ./log\2018-03-21-16-49-46_ConvNetExample_quirky-euclid\model_latest.ckpt
+2018-03-21 17:31:54.000904: INFO    @model          : Number of parameters: 281034
+2018-03-21 17:31:54.000904: INFO    @common         : 	SimpleConvNet created
+2018-03-21 17:31:54.000904: INFO    @common         : Creating hooks
+2018-03-21 17:31:54.000904: INFO    @common         : 	MnistPredict created
+2018-03-21 17:31:54.000904: INFO    @common         : Creating main loop
+2018-03-21 17:31:54.000904: INFO    @common         : Running the prediction
+2018-03-21 17:31:54.000904: INFO    @main_loop      : Running prediction
+2018-03-21 17:31:54.000975: WARNING @main_loop      : Some sources provided by the stream do not match model placeholders. Set `main_loop.on_unused_sources` to `ignore` in order to suppress this warning. Extra sources: ['id']
+2018-03-21 17:31:57.000720: INFO    @main_loop      : Prediction done
+
+
