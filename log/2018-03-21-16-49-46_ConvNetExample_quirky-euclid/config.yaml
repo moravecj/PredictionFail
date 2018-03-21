@@ -1,0 +1,36 @@
+dataset:
+  class: mnist_convnet.MNISTDataset
+
+model:
+  name: ConvNetExample
+  class: mnist_convnet.SimpleConvNet
+  n_gpus: 1
+
+  optimizer:
+    class: AdamOptimizer
+    learning_rate: 0.001
+
+  inputs: [images, labels]
+  outputs: [accuracy, predictions, loss]
+  restore_fallback: cxflow_tensorflow.BaseModel
+
+main_loop:
+  extra_streams: [test]
+  skip_zeroth_epoch: true
+  buffer: 10
+
+hooks:
+- ComputeStats:
+    variables: [loss, accuracy]
+- LogVariables
+- LogProfile
+- SaveLatest
+- StopAfter:
+    minutes: 2
+predict:
+  model:
+    inputs: [images]
+    outputs: [predictions]
+  hooks:
+  - mnist_convnet.MnistPredict
+

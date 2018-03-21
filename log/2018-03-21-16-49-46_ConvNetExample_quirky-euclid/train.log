@@ -1,0 +1,43 @@
+2018-03-21 16:49:46.000070: INFO    @common         : Creating dataset
+2018-03-21 16:49:47.000977: INFO    @common         : 	MNISTDataset created
+2018-03-21 16:49:47.000977: INFO    @common         : Creating a model
+2018-03-21 16:49:47.000977: INFO    @model          : 	Creating TF model on 1 GPU devices
+2018-03-21 16:49:49.000978: INFO    @model          : Number of parameters: 281034
+2018-03-21 16:49:49.000978: INFO    @common         : 	SimpleConvNet created
+2018-03-21 16:49:49.000994: INFO    @common         : Creating hooks
+2018-03-21 16:49:49.000994: INFO    @common         : 	ComputeStats created
+2018-03-21 16:49:49.000994: INFO    @common         : 	LogVariables created
+2018-03-21 16:49:49.000994: INFO    @common         : 	LogProfile created
+2018-03-21 16:49:49.000994: INFO    @common         : 	SaveLatest created
+2018-03-21 16:49:50.000009: INFO    @common         : 	StopAfter created
+2018-03-21 16:49:50.000009: INFO    @common         : Creating main loop
+2018-03-21 16:49:50.000009: INFO    @common         : Running the training
+2018-03-21 16:49:50.000041: INFO    @main_loop      : Training epoch 1
+2018-03-21 16:49:50.000088: INFO    @mnist_dataset  : Loading MNIST data to memory
+2018-03-21 16:50:32.000653: INFO    @log_variables  : 	train loss mean: 2.596561
+2018-03-21 16:50:32.000653: INFO    @log_variables  : 	train accuracy mean: 0.914167
+2018-03-21 16:50:32.000653: INFO    @log_variables  : 	test loss mean: 3.605015
+2018-03-21 16:50:32.000669: INFO    @log_variables  : 	test accuracy mean: 0.899900
+2018-03-21 16:50:33.000579: INFO    @save           : Model saved to: ./log\2018-03-21-16-49-46_ConvNetExample_quirky-euclid\model_latest.ckpt
+2018-03-21 16:50:33.000579: INFO    @log_profile    : 	T read data:	26.430733
+2018-03-21 16:50:33.000579: INFO    @log_profile    : 	T train:	15.051628
+2018-03-21 16:50:33.000600: INFO    @log_profile    : 	T eval:	0.853004
+2018-03-21 16:50:33.000603: INFO    @log_profile    : 	T hooks:	1.007674
+2018-03-21 16:50:33.000615: INFO    @main_loop      : Epoch 1 done
+
+
+2018-03-21 16:50:33.000615: INFO    @main_loop      : Training epoch 2
+2018-03-21 16:51:12.000479: INFO    @log_variables  : 	train loss mean: 1.108482
+2018-03-21 16:51:12.000480: INFO    @log_variables  : 	train accuracy mean: 0.952650
+2018-03-21 16:51:12.000483: INFO    @log_variables  : 	test loss mean: 0.673846
+2018-03-21 16:51:12.000496: INFO    @log_variables  : 	test accuracy mean: 0.963800
+2018-03-21 16:51:13.000532: INFO    @save           : Model saved to: ./log\2018-03-21-16-49-46_ConvNetExample_quirky-euclid\model_latest.ckpt
+2018-03-21 16:51:13.000532: INFO    @log_profile    : 	T read data:	23.091676
+2018-03-21 16:51:13.000535: INFO    @log_profile    : 	T train:	14.559865
+2018-03-21 16:51:13.000545: INFO    @log_profile    : 	T eval:	0.920940
+2018-03-21 16:51:13.000548: INFO    @log_profile    : 	T hooks:	1.144961
+2018-03-21 16:51:13.000558: INFO    @main_loop      : Epoch 2 done
+
+
+2018-03-21 16:51:13.000567: INFO    @main_loop      : Training epoch 3
+2018-03-21 16:51:50.000079: INFO    @main_loop      : Training terminated: Training terminated after more than 2 minutes
