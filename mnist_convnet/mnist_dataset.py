@@ -61,10 +61,9 @@ class MNISTDataset(cx.DownloadableDataset):
             all_data[i, :, :, :] = np.load('./dataMnist/' + str(i) + '.npy')   
         idx = 0
         bid = 0
-        labels = np.zeros((self._batch_size))
         for i in range(0, 20):
             cv2.imwrite('./output/' + str(bid) + 'a.jpeg',all_data[i*50, :, :, :])
-            yield {'images': all_data[i*50:(i+1)*50, :, :, :], 'labels': labels, 'id': str(bid)}    
+            yield {'images': all_data[i*50:(i+1)*50, :, :, :], 'id': str(bid)}    
             bid += 1
         """
 
